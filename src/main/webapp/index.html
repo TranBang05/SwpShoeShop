@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+<head>
+  <title>TODO supply a title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Shome - Shoes eCommerce Website Template"/>
+  <meta name="keywords" content="footwear, shoes, modern, shop, store, ecommerce, responsive, e-commerce"/>
+  <meta name="author" content="codecarnival"/>
+
+  <title>Shome - Shoes eCommerce Website Template</title>
+
+  <!--== Favicon ==-->
+  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+
+  <!--== Google Fonts ==-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet">
+
+  <!--== Bootstrap CSS ==-->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+  <!--== Font Awesome Min Icon CSS ==-->
+  <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+  <!--== Pe7 Stroke Icon CSS ==-->
+  <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
+  <!--== Swiper CSS ==-->
+  <link href="assets/css/swiper.min.css" rel="stylesheet" />
+  <!--== Fancybox Min CSS ==-->
+  <link href="assets/css/fancybox.min.css" rel="stylesheet" />
+  <!--== Aos Min CSS ==-->
+  <link href="assets/css/aos.min.css" rel="stylesheet" />
+
+  <!--== Main Style CSS ==-->
+  <link href="assets/css/style.css" rel="stylesheet" />
+
+  <!--[if lt IE 9]>
+  <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<!--wrapper start-->
+<div class="wrapper">
+
+  <!--== Start Header Wrapper ==-->
+  <header class="main-header-wrapper position-relative">
+    <div class="header-top">
+      <div class="container pt--0 pb--0">
+        <div class="row">
+          <div class="col-12">
+            <div class="header-top-align">
+              <div class="header-top-align-start">
+                <div class="desc">
+                  <p>World Wide Completely Free Returns and Free Shipping</p>
+                </div>
+              </div>
+              <div class="header-top-align-end">
+                <div class="header-info-items">
+                  <div class="info-items">
+                    <ul>
+                      <li class="account"><i class="fa fa-user"></i><a href="Login.jsp">Login</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-middle">
+      <div class="container pt--0 pb--0">
+        <div class="row align-items-center">
+          <div class="col-12">
+            <div class="header-middle-align">
+              <div class="header-middle-align-start">
+                <div class="header-logo-area">
+                  <a href="index.html">
+                    <img class="logo-main" src="assets/img/logo.webp" width="131" height="34" alt="Logo" />
+                    <img class="logo-light" src="assets/img/logo-light.webp" width="131" height="34" alt="Logo" />
+                  </a>
+                </div>
+              </div>
+              <div class="header-middle-align-center">
+                <div class="header-search-area">
+                  <form class="header-searchbox">
+                    <input type="search" class="form-control" placeholder="Search">
+                    <button class="btn-submit" type="submit"><i class="pe-7s-search"></i></button>
+                  </form>
+                </div>
+              </div>
+              <div class="header-middle-align-end">
+                <div class="header-action-area">
+                  <div class="shopping-search">
+                    <button class="shopping-search-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#AsideOffcanvasSearch" aria-controls="AsideOffcanvasSearch"><i class="pe-7s-search icon"></i></button>
+                  </div>
+
+                  <div class="shopping-cart">
+                    <button class="shopping-cart-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#AsideOffcanvasCart" aria-controls="offcanvasRightLabel">
+                      <i class="pe-7s-shopbag icon"></i>
+                      <sup class="shop-count">02</sup>
+                    </button>
+                  </div>
+                  <button class="btn-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#AsideOffcanvasMenu" aria-controls="AsideOffcanvasMenu">
+                    <i class="pe-7s-menu"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-area header-default">
+      <div class="container">
+        <div class="row no-gutter align-items-center position-relative">
+          <div class="col-12">
+            <div class="header-align">
+              <div class="header-navigation-area position-relative">
+                <ul class="main-menu nav">
+                  <li class="has-submenu"><a href=""><span>Home</span></a>
+                    <ul class="submenu-nav">
+                      <li><a href="index.html"><span>Home One</span></a></li>
+
+                    </ul>
+                  </li>
+
+                  <!--== chưa các chức năng đầu tiên như login , đăng kí,... ==-->
+
+
+                  <li class="has-submenu position-static"><a href="shop-four-columns.html"><span>Shop</span></a></li>
+
+
+                  <li><a href="contact.html"><span>Contact</span></a></li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--== End Header Wrapper ==-->
+
+  <main class="main-content">
+    <!--== Start Hero Area Wrapper ==-->
+    <section class="home-slider-area">
+      <div class="swiper-container home-slider-container default-slider-container">
+        <div class="swiper-wrapper home-slider-wrapper slider-default">
+          <div class="swiper-slide">
+            <div class="slider-content-area" data-bg-img="assets/img/shape/1.webp">
+              <div class="container">
+                <div class="slider-container">
+                  <div class="row justify-content-between align-items-center">
+                    <div class="col-sm-6 col-md-5">
+                      <div class="slider-content">
+                        <div class="content">
+                          <div class="title-box">
+                            <h2 class="title">Exclusive New Shoes</h2>
+                          </div>
+                          <div class="desc-box">
+                            <p class="desc">Up To 30% Off All Shoes & Products</p>
+                          </div>
+                          <div class="btn-box">
+                            <a class="btn-slider" href="shop.html">Shop Now</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                      <div class="slider-thumb">
+                        <div class="thumb scene">
+                          <span class="scene-layer" data-depth=".3"><img src="assets/img/slider/slider-01.webp" width="461" height="489" alt="Image-HasTech"></span>
+                        </div>
+                        <div class="shape-group mousemove">
+                          <div class="shape-group-one mousemove-layer" data-speed=".8" data-bg-img="assets/img/shape/2.webp"></div>
+                          <div class="shape-group-two scene"><span class="scene-layer" data-depth=".6"><img src="assets/img/shape/3.webp" width="471" height="462" alt="Image-HasTech"></span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="slider-text-shape">NEW 2021</h2>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider-content-area" data-bg-img="assets/img/shape/1.webp">
+              <div class="container">
+                <div class="slider-container">
+                  <div class="row justify-content-between align-items-center">
+                    <div class="col-sm-6 col-md-5">
+                      <div class="slider-content">
+                        <div class="content">
+                          <div class="title-box">
+                            <h2 class="title">Exclusive New Shoes</h2>
+                          </div>
+                          <div class="desc-box">
+                            <p class="desc">Up To 30% Off All Shoes & Products</p>
+                          </div>
+                          <div class="btn-box">
+                            <a class="btn-slider" href="shop.html">Shop Now</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                      <div class="slider-thumb">
+                        <div class="thumb scene">
+                          <span class="scene-layer" data-depth=".3"><img src="assets/img/slider/slider-03.webp" width="548" height="649" alt="Image-HasTech"></span>
+                        </div>
+                        <div class="shape-group mousemove">
+                          <div class="shape-group-one mousemove-layer" data-speed=".8" data-bg-img="assets/img/shape/2.webp"></div>
+                          <div class="shape-group-two scene"><span class="scene-layer" data-depth=".6"><img src="assets/img/shape/3.webp" width="471" height="462" alt="Image-HasTech"></span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="slider-text-shape">NEW 2022</h2>
+            </div>
+          </div>
+        </div>
+
+        <!--== Add Swiper Arrows ==-->
+        <div class="swiper-btn-wrap">
+          <div class="swiper-btn-prev">
+            <i class="pe-7s-angle-left"></i>
+          </div>
+          <div class="swiper-btn-next">
+            <i class="pe-7s-angle-right"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--== End Hero Area Wrapper ==-->
+
+    <!--== Start Product Collection Area Wrapper ==-->
+    <section class="product-area product-collection-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <!--== Start Product Collection Item ==-->
+            <div class="product-collection">
+              <div class="inner-content">
+                <div class="product-collection-content">
+                  <div class="content">
+                    <h3 class="title"><a href="shop.html">Sports Shoes</a></h3>
+                    <h4 class="price">From $95.00</h4>
+                  </div>
+                </div>
+                <div class="product-collection-thumb" data-bg-img="assets/img/shop/collection/1.webp"></div>
+                <a class="banner-link-overlay" href="shop.html"></a>
+              </div>
+            </div>
+            <!--== End Product Collection Item ==-->
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <!--== Start Product Collection Item ==-->
+            <div class="product-collection">
+              <div class="inner-content">
+                <div class="product-collection-content">
+                  <div class="content">
+                    <h3 class="title"><a href="shop.html">Latest Shoes</a></h3>
+                    <h4 class="price">From $90.00</h4>
+                  </div>
+                </div>
+                <div class="product-collection-thumb" data-bg-img="assets/img/shop/collection/2.webp"></div>
+                <a class="banner-link-overlay" href="shop.html"></a>
+              </div>
+            </div>
+            <!--== End Product Collection Item ==-->
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <!--== Start Product Collection Item ==-->
+            <div class="product-collection">
+              <div class="inner-content">
+                <div class="product-collection-content">
+                  <div class="content">
+                    <h3 class="title"><a href="shop.html">Office Shoes</a></h3>
+                    <h4 class="price">From $82.00</h4>
+                  </div>
+                </div>
+                <div class="product-collection-thumb" data-bg-img="assets/img/shop/collection/3.webp"></div>
+                <a class="banner-link-overlay" href="shop.html"></a>
+              </div>
+            </div>
+            <!--== End Product Collection Item ==-->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--== End Product Collection Area Wrapper ==-->
+
+    <!--== Start Product Area Wrapper ==-->
+    <section class="product-area product-default-area">
+      <div class="container pt--0">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title text-center">
+              <h3 class="title">Featured Items</h3>
+              <div class="desc">
+                <p>There are many variations of passages of Lorem Ipsum available</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-lg-3">
+            <!--== Start Product Item ==-->
+            <div class="product-item">
+              <div class="inner-content">
+                <div class="product-thumb">
+                  <a href="single-product.html">
+                    <img src="assets/img/shop/1.webp" width="270" height="274" alt="Image-HasTech">
+                  </a>
+                  <div class="product-flag">
+                    <ul>
+                      <li class="discount">-10%</li>
+                    </ul>
+                  </div>
+                  <div class="product-action">
+                    <a class="btn-product-wishlist" href="shop-wishlist.html"><i class="fa fa-heart"></i></a>
+                    <a class="btn-product-cart" href="shop-cart.html"><i class="fa fa-shopping-cart"></i></a>
+                    <button type="button" class="btn-product-quick-view-open">
+                      <i class="fa fa-arrows"></i>
+                    </button>
+                    <a class="btn-product-compare" href="shop-compare.html"><i class="fa fa-random"></i></a>
+                  </div>
+                  <a class="banner-link-overlay" href="shop.html"></a>
+                </div>
+                <div class="product-info">
+                  <div class="category">
+                    <ul>
+                      <li><a href="shop.html">Men</a></li>
+                      <li class="sep">/</li>
+                      <li><a href="shop.html">Women</a></li>
+                    </ul>
+                  </div>
+                  <h4 class="title"><a href="single-product.html">Leather Mens Slipper</a></h4>
+                  <div class="prices">
+                    <span class="price-old">$100</span>
+                    <span class="sep">-</span>
+                    <span class="price">$240.00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--== End prPduct Item ==-->
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <!--== Start Product Item ==-->
+            <div class="product-item">
+              <div class="inner-content">
+                <div class="product-thumb">
+                  <a href="single-product.html">
+                    <img src="assets/img/shop/2.webp" width="270" height="274" alt="Image-HasTech">
+                  </a>
+                  <div class="product-action">
+                    <a class="btn-product-wishlist" href="shop-wishlist.html"><i class="fa fa-heart"></i></a>
+                    <a class="btn-product-cart" href="shop-cart.html"><i class="fa fa-shopping-cart"></i></a>
+                    <button type="button" class="btn-product-quick-view-open">
+                      <i class="fa fa-arrows"></i>
+                    </button>
+                    <a class="btn-product-compare" href="shop-compare.html"><i class="fa fa-random"></i></a>
+                  </div>
+                  <a class="banner-link-overlay" href="shop.html"></a>
+                </div>
+                <div class="product-info">
+                  <div class="category">
+                    <ul>
+                      <li><a href="shop.html">Men</a></li>
+                      <li class="sep">/</li>
+                      <li><a href="shop.html">Women</a></li>
+                    </ul>
+                  </div>
+                  <h4 class="title"><a href="single-product.html">Quickiin Mens shoes</a></h4>
+                  <div class="prices">
+                    <span class="price">$140.00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--== End prPduct Item ==-->
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <!--== Start Product Item ==-->
+            <div class="product-item">
+              <div class="inner-content">
+                <div class="product-thumb">
+                  <a href="single-product.html">
+                    <img src="assets/img/shop/3.webp" width="270" height="274" alt="Image-HasTech">
+                  </a>
+                  <div class="product-flag">
+                    <ul>
+                      <li class="discount">-10%</li>
+                    </ul>
+                  </div>
+                  <div class="product-action">
+                    <a class="btn-product-wishlist" href="shop-wishlist.html"><i class="fa fa-heart"></i></a>
+                    <a class="btn-product-cart" href="shop-cart.html"><i class="fa fa-shopping-cart"></i></a>
+                    <button type="button" class="btn-product-quick-view-open">
+                      <i class="fa fa-arrows"></i>
+                    </button>
+                    <a class="btn-product-compare" href="shop-compare.html"><i class="fa fa-random"></i></a>
+                  </div>
+                  <a class="banner-link-overlay" href="shop.html"></a>
+                </div>
+                <div class="product-info">
+                  <div class="category">
+                    <ul>
+                      <li><a href="shop.html">Men</a></li>
+                      <li class="sep">/</li>
+                      <li><a href="shop.html">Women</a></li>
+                    </ul>
+                  </div>
+                  <h4 class="title"><a href="single-product.html">Rexpo Womens shoes</a></h4>
+                  <div class="prices">
+                    <span class="price-old">$60</span>
+                    <span class="sep">-</span>
+                    <span class="price">$260.00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--== End prPduct Item ==-->
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <!--== Start Product Item ==-->
+            <div class="product-item">
+              <div class="inner-content">
+                <div class="product-thumb">
+                  <a href="single-product.html">
+                    <img src="assets/img/shop/4.webp" width="270" height="274" alt="Image-HasTech">
+                  </a>
+                  <div class="product-action">
+                    <a class="btn-product-wishlist" href="shop-wishlist.html"><i class="fa fa-heart"></i></a>
+                    <a class="btn-product-cart" href="shop-cart.html"><i class="fa fa-shopping-cart"></i></a>
+                    <button type="button" class="btn-product-quick-view-open">
+                      <i class="fa fa-arrows"></i>
+                    </button>
+                    <a class="btn-product-compare" href="shop-compare.html"><i class="fa fa-random"></i></a>
+                  </div>
+                  <a class="banner-link-overlay" href="shop.html"></a>
+                </div>
+                <div class="product-info">
+                  <div class="category">
+                    <ul>
+                      <li><a href="shop.html">Men</a></li>
+                      <li class="sep">/</li>
+                      <li><a href="shop.html">Women</a></li>
+                    </ul>
+                  </div>
+                  <h4 class="title"><a href="single-product.html">Hollister V-Neck Knit</a></h4>
+                  <div class="prices">
+                    <span class="price">$880.00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--== End prPduct Item ==-->
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <!--== Start Product Item ==-->
+            <div class="product-item">
+              <div class="inner-content">
+                <div class="product-thumb">
+                  <a href="single-product.html">
+                    <img src="assets/img/shop/5.webp" width="270" height="274" alt="Image-HasTech">
+                  </a>
+                  <div class="product-action">
+                    <a class="btn-product-wishlist" href="shop-wishlist.html"><i class="fa fa-heart"></i></a>
+                    <a class="btn-product-cart" href="shop-cart.html"><i class="fa fa-shopping-cart"></i></a>
+                    <button type="button" class="btn-product-quick-view-open">
+                      <i class="fa fa-arrows"></i>
+                    </button>
+                    <a class="btn-product-compare" href="shop-compare.html"><i class="fa fa-random"></i></a>
+                  </div>
+                  <a class="banner-link-overlay" href="shop.html"></a>
+                </div>
+                <div class="product-info">
+                  <div class="category">
+                    <ul>
+                      <li><a href="shop.html">Men</a></li>
+                      <li class="sep">/</li>
+                      <li><a href="shop.html">Women</a></li>
+                    </ul>
+                  </div>
+                  <h4 class="title"><a href="single-product.html">Primitive Mens shoes</a></h4>
+                  <div class="prices">
+                    <span class="price">$500.00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--== End prPduct Item ==-->
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <!--== Start Product Item ==-->
+            <div class="product-item">
+              <div class="inner-content">
+                <div class="product-thumb">
+                  <a href="single-product.html">
+                    <img src="assets/img/shop/6.webp" width="270" height="274" alt="Image-HasTech">
+                  </a>
+                  <div class="product-flag">
+                    <ul>
+                      <li class="discount">-10%</li>
+                    </ul>
+                  </div>
+                  <div class="product-action">
+                    <a class="btn-product-wishlist" href="shop-wishlist.html"><i class="fa fa-heart"></i></a>
+                    <a class="btn-product-cart" href="shop-cart.html"><i class="fa fa-shopping-cart"></i></a>
+                    <button type="button" class="btn-product-quick-view-open">
+                      <i class="fa fa-arrows"></i>
+                    </button>
+                    <a class="btn-product-compare" href="shop-compare.html"><i class="fa fa-random"></i></a>
+                  </div>
+                  <a class="banner-link-overlay" href="shop.html"></a>
+                </div>
+                <div class="product-info">
+                  <div class="category">
+                    <ul>
+                      <li><a href="shop.html">Men</a></li>
+                      <li class="sep">/</li>
+                      <li><a href="shop.html">Women</a></li>
+                    </ul>
+                  </div>
+                  <h4 class="title"><a href="single-product.html">New Womens High Hills</a></h4>
+                  <div class="prices">
+                    <span class="price-old">$300</span>
+                    <span class="sep">-</span>
+                    <span class="price">$333.00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--== End prPduct Item ==-->
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <!--== Start Product Item ==-->
+            <div class="product-item">
+              <div class="inner-content">
+                <div class="product-thumb">
+                  <a href="single-product.html">
+                    <img src="assets/img/shop/7.webp" width="270" height="274" alt="Image-HasTech">
+                  </a>
+                  <div class="product-action">
+                    <a class="btn-product-wishlist" href="shop-wishlist.html"><i class="fa fa-heart"></i></a>
+                    <a class="btn-product-cart" href="shop-cart.html"><i class="fa fa-shopping-cart"></i></a>
+                    <button type="button" class="btn-product-quick-view-open">
+                      <i class="fa fa-arrows"></i>
+                    </button>
+                    <a class="btn-product-compare" href="shop-compare.html"><i class="fa fa-random"></i></a>
+                  </div>
+                  <a class="banner-link-overlay" href="shop.html"></a>
+                </div>
+                <div class="product-info">
+                  <div class="category">
+                    <ul>
+                      <li><a href="shop.html">Men</a></li>
+                      <li class="sep">/</li>
+                      <li><a href="shop.html">Women</a></li>
+                    </ul>
+                  </div>
+                  <h4 class="title"><a href="single-product.html">Simple Fabric Shoe</a></h4>
+                  <div class="prices">
+                    <span class="price">$133.00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--== End prPduct Item ==-->
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <!--== Start Product Item ==-->
+            <div class="product-item">
+              <div class="inner-content">
+                <div class="product-thumb">
+                  <a href="single-product.html">
+                    <img src="assets/img/shop/8.webp" width="270" height="274" alt="Image-HasTech">
+                  </a>
+                  <div class="product-flag">
+                    <ul>
+                      <li class="discount">-10%</li>
+                    </ul>
+                  </div>
+                  <div class="product-action">
+                    <a class="btn-product-wishlist" href="shop-wishlist.html"><i class="fa fa-heart"></i></a>
+                    <a class="btn-product-cart" href="shop-cart.html"><i class="fa fa-shopping-cart"></i></a>
+                    <button type="button" class="btn-product-quick-view-open">
+                      <i class="fa fa-arrows"></i>
+                    </button>
+                    <a class="btn-product-compare" href="shop-compare.html"><i class="fa fa-random"></i></a>
+                  </div>
+                  <a class="banner-link-overlay" href="shop.html"></a>
+                </div>
+                <div class="product-info">
+                  <div class="category">
+                    <ul>
+                      <li><a href="shop.html">Men</a></li>
+                      <li class="sep">/</li>
+                      <li><a href="shop.html">Women</a></li>
+                    </ul>
+                  </div>
+                  <h4 class="title"><a href="single-product.html">exclusive mens shoe</a></h4>
+                  <div class="prices">
+                    <span class="price-old">$300</span>
+                    <span class="sep">-</span>
+                    <span class="price">$420.00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--== End prPduct Item ==-->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--== End Product Area Wrapper ==-->
+
+
+  </main>
+
+
+
+
+
+
+
+
+</div>
+
+<!--=== jQuery Modernizr Min Js ===-->
+<script src="assets/js/modernizr.js"></script>
+<!--=== jQuery Min Js ===-->
+<script src="assets/js/jquery-main.js"></script>
+<!--=== jQuery Migration Min Js ===-->
+<script src="assets/js/jquery-migrate.js"></script>
+<!--=== jQuery Popper Min Js ===-->
+<script src="assets/js/popper.min.js"></script>
+<!--=== jQuery Bootstrap Min Js ===-->
+<script src="assets/js/bootstrap.min.js"></script>
+<!--=== jQuery Ui Min Js ===-->
+<script src="assets/js/jquery-ui.min.js"></script>
+<!--=== jQuery Swiper Min Js ===-->
+<script src="assets/js/swiper.min.js"></script>
+<!--=== jQuery Fancybox Min Js ===-->
+<script src="assets/js/fancybox.min.js"></script>
+<!--=== jQuery Waypoint Js ===-->
+<script src="assets/js/waypoint.js"></script>
+<!--=== jQuery Parallax Min Js ===-->
+<script src="assets/js/parallax.min.js"></script>
+<!--=== jQuery Aos Min Js ===-->
+<script src="assets/js/aos.min.js"></script>
+
+<!--=== jQuery Custom Js ===-->
+<script src="assets/js/custom.js"></script>
+</body>
+</html>
