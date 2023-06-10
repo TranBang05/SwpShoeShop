@@ -146,13 +146,13 @@
 
                     <h1>Register</h1>
 
-                    <form class="input_box" action="signup" method="post">
+                    <form class="input_box" action="userVerify" method="post">
 
                         <input type="text" class="field" name="username" placeholder="Name">
                         <input type="password" class="field" name="password" placeholder="Password" maxlength="10">
-                        <input type="password" class="field" name="repassword" placeholder="Re_Password" maxlength="10">
+
                         <input type="email" class="field" name="email" placeholder="Email">
-                        <a  class="submit_btn" href="Email.jsp" >Dang Nhap bang email</a>
+
                         <button type="submit" class="submit_btn">Register</button>
 
 

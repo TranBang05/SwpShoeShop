@@ -8,7 +8,9 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 
 public class User {
-    private String id, username, password, email;
+    private String id, username, password, email,code;
+
+
 
     public User() {
         connect();
@@ -25,19 +27,34 @@ public class User {
         connect();
     }
 
-    public User(String id, String username, String password, String email) {
-        this.id = id;
+    public User(String username, String password, String email, String code) {
+
         this.username = username;
         this.password = password;
         this.email = email;
+        this.code=code;
         connect();
     }
+
+
+
     public User(String username, String password, String email) {
         
         this.username = username;
         this.password = password;
         this.email = email;
         connect();
+    }
+
+
+
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
     }
 
     public String getId() {

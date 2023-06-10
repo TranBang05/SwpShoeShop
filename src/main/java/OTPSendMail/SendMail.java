@@ -1,9 +1,9 @@
-package Model;
+package OTPSendMail;
 
+import Model.User;
 import jakarta.mail.*;
 import jakarta.mail.internet.InternetAddress;
 import jakarta.mail.internet.MimeMessage;
-
 
 import java.util.Properties;
 import java.util.Random;
@@ -18,17 +18,18 @@ public class SendMail {
         boolean test=false;
         String toEmail=user.getEmail();
         String fromEmail="tranxuanbang.yt@gmail.com";
-        String password="bang0501@b";
+        String password="zptgaabhvfqmsvnw";
         try{
-            Properties pr =new Properties();
-            pr.setProperty("mail.smtp.host","smtp.mail.com");
-            pr.setProperty("mail.smtp.port","587");
-            pr.setProperty("mail.smtp.auth","true");
-            pr.setProperty("mail.smtp.starttls.enable","true");
-            pr.put("mail.smtp.socketFactory.port","587");
-            pr.put("mail.smtp.socketFactory.class","javax.net.ssl.SSLSocketFactory");
+            String host = "smtp.gmail.com";
+            String port = "587";
 
-            Session session = Session.getInstance(pr, new jakarta.mail.Authenticator() {
+            Properties pr= new Properties();
+            pr.put("mail.smtp.host", host);
+            pr.put("mail.smtp.auth", "true");
+            pr.put("mail.smtp.port", port);
+            pr.put("mail.smtp.starttls.enable", "true");
+
+            Session session = Session.getInstance(pr, new Authenticator() {
                 protected PasswordAuthentication getPasswordAuthentication() {
                     return new PasswordAuthentication(fromEmail, password);
                 }
@@ -39,10 +40,11 @@ public class SendMail {
             mess.setSubject("User Email Verification");
             mess.setText("Registerred successfully. Please verify your accout using this code");
             Transport.send(mess);
+            System.out.println("Send mail success");
             test=true;
 
         }catch (Exception e){
-            e.printStackTrace();
+            System.out.println(e.getMessage());
         }
 
         return test;

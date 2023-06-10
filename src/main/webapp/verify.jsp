@@ -7,10 +7,13 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-  <head>
-    <title>$Title$</title>
-  </head>
-  <body>
-  $END$
-  </body>
+<head>
+    <title>Title</title>
+</head>
+<body>
+<form action="signup" method="post">
+    <input type="text" name="authcode">
+   <input type="submit" value="verify">
+</form>
+</body>
 </html>

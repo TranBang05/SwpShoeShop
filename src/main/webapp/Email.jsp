@@ -146,17 +146,10 @@
 
                     <h1></h1>
 
-                    <form class="input_box" action="" method="post">
-
+                    <form class="input_box" action="" method="">
+                        <input type="text" class="field" placeholder="Account" name="username" value="">
                         <input type="email" class="field" name="email" placeholder="Email">
                         <input type="password" class="field" name="password" placeholder="Nhập mật khẩu của bạn" maxlength="10">
-
-
-
-
-
-
-
                         <button type="submit" class="submit_btn">Đăng Nhập</button>
 
 
