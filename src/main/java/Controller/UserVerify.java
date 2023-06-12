@@ -24,11 +24,21 @@ public class UserVerify extends HttpServlet {
             String username = request.getParameter("username");
             String email=request.getParameter("email");
             String password = request.getParameter("password");
+            String repassword = request.getParameter("repassword");
             SendMail sm = new SendMail();
             String code=sm.getRandom();
             User user = new User(username,password, email,code);
             boolean test=sm.sendEmail(user);
             if(test){
+
+                User us=new User(username, password, email);
+                us.addUser();
+
+                request.setAttribute("username", username);
+                request.setAttribute("password", password);
+                request.setAttribute("repassword", repassword);
+                request.setAttribute("email", email);
+
                 HttpSession session = request.getSession();
                 session.setAttribute("authcode",user);
                 response.sendRedirect("verify.jsp");

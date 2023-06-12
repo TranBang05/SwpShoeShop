@@ -23,14 +23,18 @@ public class SignUpController extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setContentType("text/html;charset=UTF-8");
         try ( PrintWriter out = resp.getWriter()) {
+            /*
             String username = req.getParameter("username");
             String password = req.getParameter("password");
             String repassword = req.getParameter("repassword");
             String email = req.getParameter("email");
+
+             */
             HttpSession session = req.getSession();
             User user = (User) session.getAttribute("authcode");
             String code=req.getParameter("authcode");
             if(code.equals(user.getCode())){
+                /*
                 User us=new User(username, password, email);
                 us.addUser();
 
@@ -38,6 +42,8 @@ public class SignUpController extends HttpServlet {
                 req.setAttribute("password", password);
                 req.setAttribute("repassword", repassword);
                 req.setAttribute("email", email);
+
+                 */
 
 
                 req.setAttribute("messU", "Đăng kí thành công");

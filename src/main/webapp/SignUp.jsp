@@ -150,7 +150,7 @@
 
                         <input type="text" class="field" name="username" placeholder="Name">
                         <input type="password" class="field" name="password" placeholder="Password" maxlength="10">
-
+                        <input type="password" class="field" name="repassword" placeholder="RePassword" maxlength="10">
                         <input type="email" class="field" name="email" placeholder="Email">
 
                         <button type="submit" class="submit_btn">Register</button>

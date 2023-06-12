@@ -9,9 +9,9 @@ public class DBContext {
 
     public DBContext() {
         try {
-            String user = "root";
+            String user = "Tranbangbang";
             String pass = "bang0501@b";
-            String url = "jdbc:mysql://localhost:3306/Shoeshope";
+            String url = "jdbc:mysql://sever02.mysql.database.azure.com/Shoeshope";
             Class.forName("com.mysql.cj.jdbc.Driver");
             connection = DriverManager.getConnection(url, user, pass);
         } catch (ClassNotFoundException ex) {

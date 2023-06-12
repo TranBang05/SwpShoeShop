@@ -11,7 +11,9 @@
   <version>1.0-SNAPSHOT</version>
   <name>ShoeShop Maven Webapp</name>
   <url>http://maven.apache.org</url>
+
   <dependencies>
+
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -53,4 +55,5 @@
   <build>
     <finalName>ShoeShop</finalName>
   </build>
+
 </project>
